@@ -7,7 +7,7 @@ Triangle::Triangle(Point newCenter, double newSideLength) : Figure(newCenter) {
 }
 
 double Triangle::area() {
-    return sideLength * sideLength / 2;
+    return sideLength * sideLength * std::sqrt(3) / 4;
 }
 
 void Triangle::boundingBox() {

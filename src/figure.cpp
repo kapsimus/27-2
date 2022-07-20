@@ -1,3 +1,4 @@
+#include <iostream>
 #include "figure.h"
 
 
@@ -11,8 +12,11 @@ Point Figure::getCenter() {
     return center;
 }
 
-Color Figure::getColor() {
-    return color;
+std::string Figure::getColor() {
+    if (color == red) return "red";
+    else if (color == green) return "green";
+    else if (color == blue) return "blue";
+    else if (color == none) return "none";
 }
 
 void Figure::setColor(Color newColor) {

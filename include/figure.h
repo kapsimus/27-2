@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include "point.h"
 
 enum Color{
@@ -13,7 +14,7 @@ class Figure {
     Color color;
 public:
     Figure(Point c);
-    virtual Color getColor();
+    virtual std::string getColor();
     virtual void setColor(Color newColor);
     virtual void setCenter(Point newCenter);
     virtual Point getCenter();
